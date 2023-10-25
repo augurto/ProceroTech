@@ -29,6 +29,9 @@
             multifamiliarContent.style.display = "none";
             comercialContent.style.display = "block";
         });
+        let imagenSrc3 = "";
+        let imagenSrc2 = "";
+        let imagenSrc = "";
     </script>
 </head>
 
@@ -115,7 +118,7 @@
                 const lavanderia = document.getElementById("lavanderia").value;
                 
                 // Obtener la ruta de la imagen correspondiente a las condiciones
-                let imagenSrc = "";
+                
 
                 if (
                     ancho === "8" &&
@@ -321,7 +324,7 @@
         </select><br>
         <center>
 
-            <button onclick="mostrarImagen()">Generar Plano </button>
+            <button onclick="mostrarImagen2()">Generar Plano </button>
         </center>
 
 
@@ -330,171 +333,112 @@
                 <img id="imagen2" style="display: none;">
             </div>
 
-            <button id="descargarButton2" onclick="descargarPDF()" style="display: none;">Descargar en PDF</button>
+            <button id="descargarButton2" onclick="descargarPDF2()" style="display: none;">Descargar en PDF</button>
         </center>
         <script>
-            function mostrarImagen() {
-                const ancho = document.getElementById("ancho2").value;
-                const largo = document.getElementById("largo2").value;
-                const escalera = document.getElementById("escalera2").value;
-                const cuartos = document.getElementById("cuartos2").value;
-                const Terraza = document.getElementById("Terraza2").value;
-                const banos = document.getElementById("banos2").value;
-                const sala = document.getElementById("sala2").value;
-                const comedor = document.getElementById("comedor2").value;
-                const cocina = document.getElementById("cocina2").value;
-                const lavanderia = document.getElementById("lavanderia2").value;
+            function mostrarImagen2() {
+                const ancho2 = document.getElementById("ancho2").value;
+                const largo2 = document.getElementById("largo2").value;
+                const escalera2 = document.getElementById("escalera2").value;
+                const cuartos2 = document.getElementById("cuartos2").value;
+                const Terraza2 = document.getElementById("Terraza2").value;
+                const banos2 = document.getElementById("banos2").value;
+                const sala2 = document.getElementById("sala2").value;
+                const comedor2 = document.getElementById("comedor2").value;
+                const cocina2 = document.getElementById("cocina2").value;
+                const lavanderia2 = document.getElementById("lavanderia2").value;
 
                 // Obtener la ruta de la imagen correspondiente a las condiciones
-                let imagenSrc = "";
+                
 
                 if (
-                    ancho === "6" &&
-                    largo === "17" &&
-                    escalera === "2" &&
-                    cuartos === "4" &&
-                    Terraza === "Si"&&
-                    banos === "2" &&
-                    sala === "si" &&
-                    comedor === "si" &&
-                    cocina === "si" &&
-                    lavanderia === "si"
+                    ancho2 === "6" &&
+                    largo2 === "17" &&
+                    escalera2 === "2" &&
+                    cuartos2 === "4" &&
+                    Terraza2 === "Si"&&
+                    banos2 === "2" &&
+                    sala2 === "si" &&
+                    comedor2 === "si" &&
+                    cocina2 === "si" &&
+                    lavanderia2 === "si"
                 ) {
-                    imagenSrc = "http://procero.tech/wp-content/uploads/2023/10/2-2_page-0001.webp"; // Reemplaza con la URL de la primera imagen
+                    imagenSrc2 = "http://procero.tech/wp-content/uploads/2023/10/2-2_page-0001.webp"; // Reemplaza con la URL de la primera imagen
                 } else if (
-                    ancho === "6" &&
-                    largo === "17" &&
-                    escalera === "2" &&
-                    cuartos === "4" &&
-                    Terraza === "Si"&&
-                    banos === "2" &&
-                    sala === "si" &&
-                    comedor === "si" &&
-                    cocina === "si" &&
-                    lavanderia === "si"
+                    ancho2 === "6" &&
+                    largo2 === "17" &&
+                    escalera2 === "2" &&
+                    cuartos2 === "4" &&
+                    Terraza2 === "Si"&&
+                    banos2 === "2" &&
+                    sala2 === "si" &&
+                    comedor2 === "si" &&
+                    cocina2 === "si" &&
+                    lavanderia2 === "si"
                 ) {
-                    imagenSrc = "http://procero.tech/wp-content/uploads/2023/10/14-14_page-0001.webp"; // Reemplaza con la URL de la segunda imagen
+                    imagenSrc2 = "http://procero.tech/wp-content/uploads/2023/10/14-14_page-0001.webp"; // Reemplaza con la URL de la segunda imagen
                 } else if (
-                    ancho === "7" &&
-                    largo === "18" &&
-                    escalera === "2" &&
-                    cuartos === "4" &&
-                    Terraza === "Si"&&
-                    banos === "2" &&
-                    sala === "si" &&
-                    comedor === "si" &&
-                    cocina === "si" &&
-                    lavanderia === "si"
+                    ancho2 === "7" &&
+                    largo2 === "18" &&
+                    escalera2 === "2" &&
+                    cuartos2 === "4" &&
+                    Terraza2 === "Si"&&
+                    banos2 === "2" &&
+                    sala2 === "si" &&
+                    comedor2 === "si" &&
+                    cocina2 === "si" &&
+                    lavanderia2 === "si"
                 ) {
                     // Tercer caso
-                    imagenSrc = "http://procero.tech/wp-content/uploads/2023/10/15-15_page-0001.webp"; // Reemplaza con la URL de la tercera imagen
+                    imagenSrc2 = "http://procero.tech/wp-content/uploads/2023/10/15-15_page-0001.webp"; // Reemplaza con la URL de la tercera imagen
                 } else if (
-                    ancho === "6" &&
-                    largo === "17" &&
-                    escalera === "2" &&
-                    cuartos === "5" &&
-                    Terraza === "Si"&&
-                    banos === "2" &&
-                    sala === "si" &&
-                    comedor === "si" &&
-                    cocina === "si" &&
-                    lavanderia === "si"
+                    ancho2 === "6" &&
+                    largo2 === "17" &&
+                    escalera2 === "2" &&
+                    cuartos2 === "5" &&
+                    Terraza2 === "Si"&&
+                    banos2 === "2" &&
+                    sala2 === "si" &&
+                    comedor2 === "si" &&
+                    cocina2 === "si" &&
+                    lavanderia2 === "si"
                 ) {
                     // Cuarto caso
-                    imagenSrc = "http://procero.tech/wp-content/uploads/2023/10/3-3-pdf-1.webp"; // Reemplaza con la URL de la cuarta imagen
+                    imagenSrc2 = "http://procero.tech/wp-content/uploads/2023/10/3-3-pdf-1.webp"; // Reemplaza con la URL de la cuarta imagen
                 } 
 
-                const imagen = document.getElementById("imagen2");
+                const imagen2 = document.getElementById("imagen2");
 
-                if (imagenSrc === "") {
+                if (imagenSrc2 === "") {
                     alert("Estas dimensiones y opciones no son las adecuadas para generar una distribucion eficiente.");
-                    imagen.style.display = "none"; // Ocultar la imagen si no se encontró una correspondencia
+                    imagen2.style.display = "none"; // Ocultar la imagen si no se encontró una correspondencia
                 } else {
-                    imagen.src = imagenSrc;
-                    imagen.style.display = "block"; // Mostrar la imagen
+                    imagen2.src = imagenSrc2;
+                    imagen2.style.display = "block"; // Mostrar la imagen
                 }
                 document.getElementById("descargarButton2").style.display = "block";
 
             }
 
-            function descargarPDF() {
-                const ancho = document.getElementById("ancho2").value;
-                const largo = document.getElementById("largo2").value;
-                const escalera = document.getElementById("escalera2").value;
-                const cuartos = document.getElementById("cuartos2").value;
-                const Terraza = document.getElementById("Terraza2").value;
-                const banos = document.getElementById("banos2").value;
-                const sala = document.getElementById("sala2").value;
-                const comedor = document.getElementById("comedor2").value;
-                const cocina = document.getElementById("cocina2").value;
-                const lavanderia = document.getElementById("lavanderia2").value;
+            function descargarPDF2() {
+                const ancho2 = document.getElementById("ancho2").value;
+                const largo2 = document.getElementById("largo2").value;
+                const escalera2 = document.getElementById("escalera2").value;
+                const cuartos2 = document.getElementById("cuartos2").value;
+                const Terraza2 = document.getElementById("Terraza2").value;
+                const banos2 = document.getElementById("banos2").value;
+                const sala2 = document.getElementById("sala2").value;
+                const comedor2 = document.getElementById("comedor2").value;
+                const cocina2 = document.getElementById("cocina2").value;
+                const lavanderia2 = document.getElementById("lavanderia2").value;
                 
-                let imagenSrc = "";
-
-                if (
-                    ancho === "6" &&
-                    largo === "17" &&
-                    escalera === "2" &&
-                    cuartos === "4" &&
-                    Terraza === "Si"&&
-                    banos === "2" &&
-                    sala === "si" &&
-                    comedor === "si" &&
-                    cocina === "si" &&
-                    lavanderia === "si"
-                ) {
-                    imagenSrc = "http://procero.tech/wp-content/uploads/2023/10/2-2_page-0001.webp"; // Reemplaza con la URL de la primera imagen
-                } else if (
-                    ancho === "6" &&
-                    largo === "17" &&
-                    escalera === "2" &&
-                    cuartos === "4" &&
-                    Terraza === "Si"&&
-                    banos === "2" &&
-                    sala === "si" &&
-                    comedor === "si" &&
-                    cocina === "si" &&
-                    lavanderia === "si"
-                ) {
-                    imagenSrc = "http://procero.tech/wp-content/uploads/2023/10/14-14_page-0001.webp"; // Reemplaza con la URL de la segunda imagen
-                } else if (
-                    ancho === "7" &&
-                    largo === "18" &&
-                    escalera === "2" &&
-                    cuartos === "4" &&
-                    Terraza === "Si"&&
-                    banos === "2" &&
-                    sala === "si" &&
-                    comedor === "si" &&
-                    cocina === "si" &&
-                    lavanderia === "si"
-                ) {
-                    // Tercer caso
-                    imagenSrc = "http://procero.tech/wp-content/uploads/2023/10/15-15_page-0001.webp"; // Reemplaza con la URL de la tercera imagen
-                } else if (
-                    ancho === "6" &&
-                    largo === "17" &&
-                    escalera === "2" &&
-                    cuartos === "5" &&
-                    Terraza === "Si"&&
-                    banos === "2" &&
-                    sala === "si" &&
-                    comedor === "si" &&
-                    cocina === "si" &&
-                    lavanderia === "si"
-                ) {
-                    // Cuarto caso
-                    imagenSrc = "http://procero.tech/wp-content/uploads/2023/10/3-3-pdf-1.webp"; // Reemplaza con la URL de la cuarta imagen
-                } 
-
-               
-                if (imagenSrc === "") {
+                if (imagenSrc2 === "") {
                     alert("Proceso interrumpido por falta de datos");
                     return;
                 }
 
                 // Generar la URL del archivo generarPDF.php con los parámetros y la URL de la imagen
-                const pdfURL = `../sistema/pdf.php?ancho2=${ancho}&largo2=${largo}&escalera2=${escalera}&cuartos2=${cuartos}&Terraza2=${Terraza}&banos2=${banos}&sala2=${sala}&comedor2=${comedor}&cocina2=${cocina}&lavanderia2=${lavanderia}&imagen2=${imagenSrc}`;
+                const pdfURL = `../sistema/pdf.php?ancho2=${ancho2}&largo2=${largo2}&escalera2=${escalera2}&cuartos2=${cuartos2}&Terraza2=${Terraza2}&banos2=${banos2}&sala2=${sala2}&comedor2=${comedor2}&cocina2=${cocina2}&lavanderia2=${lavanderia2}&imagen2=${imagenSrc2}`;
 
                 // Abrir una nueva pestaña hacia la URL
                 window.open(pdfURL, "_blank");
@@ -558,20 +502,14 @@
             <option value="no">No</option>
         </select>
 
-        <p>Tienda:</p>
+        <p>Tienda o Cochera:</p>
         <select id="Tienda3">
-            <option value="si">Si</option>
-            <option value="no">No</option>
-        </select>
-
-        <p>Cochera:</p>
-        <select id="Cochera3">
             <option value="si">Si</option>
             <option value="no">No</option>
         </select><br>
         <center>
 
-            <button onclick="mostrarImagen()">Generar Plano </button>
+            <button onclick="mostrarImagen3()">Generar Plano </button>
         </center>
 
 
@@ -580,89 +518,89 @@
                 <img id="imagen3" style="display: none;">
             </div>
 
-            <button id="descargarButton3" onclick="descargarPDF()" style="display: none;">Descargar en PDF</button>
+            <button id="descargarButton3" onclick="descargarPDF3()" style="display: none;">Descargar en PDF</button>
         </center>
         <script>
-            function mostrarImagen() {
-                const ancho = document.getElementById("ancho3").value;
-                const largo = document.getElementById("largo3").value;
-                const escalera = document.getElementById("escalera3").value;
-                const cuartos = document.getElementById("cuartos3").value;
-                const banos = document.getElementById("banos3").value;
-                const sala = document.getElementById("sala3").value;
-                const comedor = document.getElementById("comedor3").value;
-                const cocina = document.getElementById("cocina3").value;
-                const lavanderia = document.getElementById("lavanderia3").value;
-                const Tienda = document.getElementById("Tienda3").value;
-                const Cochera = document.getElementById("Cochera3").value;
+            function mostrarImagen3() {
+                const ancho3 = document.getElementById("ancho3").value;
+                const largo3 = document.getElementById("largo3").value;
+                const escalera3 = document.getElementById("escalera3").value;
+                const cuartos3 = document.getElementById("cuartos3").value;
+                const banos3 = document.getElementById("banos3").value;
+                const sala3 = document.getElementById("sala3").value;
+                const comedor3 = document.getElementById("comedor3").value;
+                const cocina3 = document.getElementById("cocina3").value;
+                const lavanderia3 = document.getElementById("lavanderia3").value;
+                const Tienda3 = document.getElementById("Tienda3").value;
+               
                 // Obtener la ruta de la imagen correspondiente a las condiciones
-                let imagenSrc = "";
+                
 
                 if (
-                    ancho === "6" &&
-                    largo === "17" &&
-                    escalera === "2" &&
-                    cuartos === "2" &&
-                    banos === "1" &&
-                    sala === "si" &&
-                    comedor === "si" &&
-                    cocina === "si" &&
-                    lavanderia === "si"&&
-                    Tienda==="si"&&
-                    Cochera==="no"
+                    ancho3 === "6" &&
+                    largo3 === "17" &&
+                    escalera3 === "2" &&
+                    cuartos3 === "2" &&
+                    banos3 === "1" &&
+                    sala3 === "si" &&
+                    comedor3 === "si" &&
+                    cocina3 === "si" &&
+                    lavanderia3 === "si"&&
+                    Tienda3 ==="si"
+                    
                 ) {
-                    imagenSrc = "http://procero.tech/wp-content/uploads/2023/10/1-1_page-0001-2.webp"; // Reemplaza con la URL de la primera imagen
+                    imagenSrc3 = "http://procero.tech/wp-content/uploads/2023/10/1-1_page-0001-2.webp"; // Reemplaza con la URL de la primera imagen
                 } else if (
-                    ancho === "6" &&
-                    largo === "17" &&
-                    escalera === "2" &&
-                    cuartos === "2" &&
-                    banos === "1" &&
-                    sala === "si" &&
-                    comedor === "si" &&
-                    cocina === "si" &&
-                    lavanderia === "si"&&
-                    Tienda==="si"&&
-                    Cochera==="no"
+                    ancho3 === "6" &&
+                    largo3 === "17" &&
+                    escalera3 === "2" &&
+                    cuartos3 === "2" &&
+                    banos3 === "1" &&
+                    sala3 === "si" &&
+                    comedor3 === "si" &&
+                    cocina3 === "si" &&
+                    lavanderia3 === "si"&&
+                    Tienda3 ==="si"
+                    
                 ) {
-                    imagenSrc = "http://procero.tech/wp-content/uploads/2023/10/1-1_page-0001-2.webp"; // Reemplaza con la URL de la segunda imagen
+                    imagenSrc3 = "http://procero.tech/wp-content/uploads/2023/10/1-1_page-0001-2.webp"; // Reemplaza con la URL de la segunda imagen
                 } 
 
-                const imagen = document.getElementById("imagen3");
+                const imagen3 = document.getElementById("imagen3");
 
-                if (imagenSrc === "") {
+                if (imagenSrc3 === "") {
                     alert("Estas dimensiones y opciones no son las adecuadas para generar una distribucion eficiente.");
-                    imagen.style.display = "none"; // Ocultar la imagen si no se encontró una correspondencia
+                    imagen3.style.display = "none"; // Ocultar la imagen si no se encontró una correspondencia
                 } else {
-                    imagen.src = imagenSrc;
-                    imagen.style.display = "block"; // Mostrar la imagen
+                    imagen3.src = imagenSrc3;
+                    imagen3.style.display = "block"; // Mostrar la imagen
                 }
                 document.getElementById("descargarButton3").style.display = "block";
 
             }
 
-            function descargarPDF() {
-                const ancho = document.getElementById("ancho").value;
-                const largo = document.getElementById("largo").value;
-                const escalera = document.getElementById("escalera").value;
-                const cuartos = document.getElementById("cuartos").value;
-                const banos = document.getElementById("banos").value;
-                const sala = document.getElementById("sala").value;
-                const comedor = document.getElementById("comedor").value;
-                const cocina = document.getElementById("cocina").value;
-                const lavanderia = document.getElementById("lavanderia").value;
-                const Tienda = document.getElementById("Tienda").value;
-                const Cochera = document.getElementById("Cochera").value;
+            function descargarPDF3() {
+                const ancho3 = document.getElementById("ancho3").value;
+                const largo3 = document.getElementById("largo3").value;
+                const escalera3 = document.getElementById("escalera3").value;
+                const cuartos3 = document.getElementById("cuartos3").value;
+                const banos3 = document.getElementById("banos3").value;
+                const sala3 = document.getElementById("sala3").value;
+                const comedor3 = document.getElementById("comedor3").value;
+                const cocina3 = document.getElementById("cocina3").value;
+                const lavanderia3 = document.getElementById("lavanderia3").value;
+                const Tienda3 = document.getElementById("Tienda3").value;
+                
 
                 // Agrega más condiciones según tus necesidades
 
-                if (imagenSrc === "") {
+                if (imagenSrc3 === "") {
                     alert("Proceso interrumpido por falta de datos");
                     return;
                 }
 
                 // Generar la URL del archivo generarPDF.php con los parámetros y la URL de la imagen
-                const pdfURL = `../sistema/pdf.php?ancho3=${ancho}&largo3=${largo}&escalera3=${escalera}&cuartos3=${cuartos}&banos3=${banos}&sala3=${sala}&comedor3=${comedor}&cocina3=${cocina}&lavanderia3=${lavanderia}&Tienda3=${Tienda}&Cochera3=${Cochera}&imagen3=${imagenSrc}`;
+                const pdfURL = `../sistema/pdf.php?ancho3=${ancho3}&largo3=${largo3}&escalera3=${escalera3}&cuartos3=${cuartos3}&banos3=${banos3}&sala3=${sala3}&comedor3=${comedor3}&cocina3=${cocina3}&lavanderia3=${lavanderia3}&Tienda3=${Tienda3}&imagen3=${imagenSrc3}`;
 
                 // Abrir una nueva pestaña hacia la URL
                 window.open(pdfURL, "_blank");
